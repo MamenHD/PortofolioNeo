@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+*{
+    font-family: "Oswald",sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.4s;
+}
+
+body{
+    background-color: #040404;
+}
+
+header{
+    display: inline;
+}
+
+main{
+    padding: 20px;
+    gap: 1.5rem;
+}
+
+
+
+.judul{
+    color: white;
+    font-size: 100px;
+}
+
+.subjudul{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.sub{
+    text-align: center;
+}
+
+#content {
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+    margin-top: 50px;
+  }
+
+.container{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* Navbar section */
+
+.nav{
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    line-height: 65px;
+    text-align: center;
+    background-color: rgba(38, 38, 38, 0.8);
+}
+
+.nav div.logo{
+    width: 180px;
+    height: 10px;
+    position: absolute;
+    margin-top: -70px;
+}
+
+.nav div.logo a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8em;
+    text-transform: uppercase;
+}
+
+.nav div.logo a:hover {
+    color: #c0c0c0;
+}
+
+.nav div.main_list{
+    width: 600px;
+    height: 65px;
+}
+
+.nav div.main_list ul{
+    width:100%;
+    height: 65px;
+    display: flex;
+    list-style: none;
+}
+
+.nav div.main_list ul li{
+    width: 120px;
+    height: 65px;
+}
+
+.nav div.main_list ul li a{
+    text-decoration: none;
+    color: #fff;
+    line-height: 65px;
+    text-transform: uppercase;
+}
+
+.nav div.main_list ul li a:hover{
+    color: #c0c0c0;
+}
+
+.nav div.media_button {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    display: none;
+}
+
+.nav div.media_button button.main_media_button {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.nav div.media_button button.main_media_button span{
+    width: 98%;
+    height: 1px;
+    display: block;
+    background-color: #fff;
+    margin-top: 9px;
+    margin-bottom: 10px;
+}
+
+.nav div.media_button button.main_media_button:hover span:nth-of-type(1){
+    transform: rotateY(180deg);
+    transition: all 0.5s;
+    background-color: #c0c0c0;
+}
+
+.nav div.media_button button.main_media_button:hover span:nth-of-type(2){
+    transform: rotateY(180deg);
+    transition: all 0.4s;
+    background-color: #c0c0c0;
+}
+
+.nav div.media_button button.main_media_button:hover span:nth-of-type(3){
+    transform: rotateY(180deg);
+    transition: all 0.3s;
+    background-color: #c0c0c0;
+}
+
+.nav div.media_button button.active span:nth-of-type(1) {
+    transform: rotate3d(0, 0, 1, 45deg);
+    position: absolute;
+    margin: 0;
+}
+
+.nav div.media_button button.active span:nth-of-type(2) {
+    display: none;
+}
+
+.nav div.media_button button.active span:nth-of-type(3) {
+    transform: rotate3d(0, 0, 1, -45deg);
+    position: absolute;
+    margin: 0;
+}
+
+.nav div.media_button button.active:hover span:nth-of-type(1) {
+    transform: rotate3d(0, 0, 1, 20deg);
+}
+
+.nav div.media_button button.active:hover span:nth-of-type(3) {
+    transform: rotate3d(0, 0, 1, -20deg);
+}
+
+.card {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+.card.portofolio{
+    background-image: url(../image/bannerportofolio.png);
+    background-size: 100%;
+    background-position-y: -70px;
+}
+
+.card.sepeda{
+    background-image: url(../image/bannersepeda.png);
+    background-size: 100%;
+    background-position-y: -70px;
+}
+
+.card.jurusan{
+    background-image: url(../image/bannerjurusan.png);
+    background-size: 100%;
+}
+
+.card h2{
+    margin: 20px 0;
+    color: white;
+}
+
+.card.jurusan h2 ,.card.jurusan p{
+    color: black;
+}
+
+.card p{
+    color: white;
+}
+
+.subjudulcard{
+    margin-bottom: 100px;
+}
+
+.btn{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    background-color: transparent;
+    width: 50px;
+    height: 30px;
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    font-size: 20px;
+    width: 100px;
+    height: 50px;
+    border-width: 3px;
+}
+
+.btn:hover{
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border: none;
+}
+
+.btnj{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    background-color: transparent;
+    width: 50px;
+    height: 30px;
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    font-size: 20px;
+    width: 100px;
+    height: 50px;
+    border-width: 3px;
+}
+
+.btnj:hover{
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: none;
+}
+
+/* Profil Section */
+
+.profil{
+    margin-top: 20px;
+}
+
+.profil h1{
+    color: white;
+}
+
+.profile{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.profile header {
+    text-align: center;
+    
+}
+
+.profile img{
+    width: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+/* Contact Section */
+
+.contact{
+    margin-top: 20px;
+}
+
+.contact h1{
+    text-align: center;
+    color: white;
+}
+
+.kontak{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.kontak a{
+    text-decoration: none;
+    color: black;
+}
+
+
+footer{
+    background-color: rgb(230, 230, 230);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Media Query Section */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    
+    .container{
+        margin: 0;
+    }
+    
+    main {
+        flex-flow: column nowrap;
+      }
+      main aside {
+        align-self: center;
+      }
+    .card.portofolio, .card.sepeda, .card.jurusan{
+        background-size: 200%;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    
+    .nav div.logo{
+        margin-left: 15px;
+    }
+    
+    .nav div.main_list{
+        width: 100%;
+        margin-top: 65px;
+        height: 0px;
+        overflow: hidden;
+    }
+    
+    .nav div.show_list{
+        height: 200px;
+    }
+    
+    .nav div.main_list ul{
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+        top: 80px;
+        right: 0;
+        left: 0;
+    }
+    
+    .nav div.main_list ul li{
+        width: 100%;
+        height: 40px;
+        background-color:rgba(38, 38, 38, 0.8);
+    }
+    
+    .nav div.main_list ul li a{
+      text-align: center;
+        line-height: 40px;
+        width: 100%;
+        height: 40px;
+        display: table;
+    }
+    
+    .nav div.media_button{
+        display: block;
+    }
+    
+    main aside {
+        align-self: stretch;
+      }
+
+    .card.portofolio, .card.sepeda, .card.jurusan{
+        background-size: 300%;
+    }
+}
